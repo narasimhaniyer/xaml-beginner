@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/RestaurantManager/RestaurantManager.WindowsPhone/bin/Debug
+/RestaurantManager/RestaurantManager.WindowsPhone/obj/Debug
+/RestaurantManager/RestaurantManager.Windows/bin/Debug
+/RestaurantManager/RestaurantManager.Windows/obj/Debug
