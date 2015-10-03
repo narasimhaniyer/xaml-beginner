@@ -7,6 +7,12 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+    <Page.TopAppBar>
+        <CommandBar HorizontalContentAlignment="Left">
+            <AppBarButton Icon="Home" Label="Home" Click="AppBarButton_Click" />
+        </CommandBar>
+    </Page.TopAppBar>
+
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="2*" />
@@ -20,10 +26,12 @@
             <ColumnDefinition Width="1*" />
             <ColumnDefinition Width="1*" />
         </Grid.ColumnDefinitions>
-        
+
         <TextBlock Text="Special requests:" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" />
         <TextBlock Text="Order items:" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="1" Grid.Column="2" />
-        <TextBlock Text="**Add to Order**" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" Grid.Column="0" />
-        <TextBlock Text="**Submit Order**" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" />
+        <Button Content="Add to Order" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" Grid.Column="0" />
+        <Button Content="Submit Order" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" />
+        <ListView x:Name="gvLeft" Grid.Row="2" Grid.Column="0"></ListView>
+        <ListView x:Name="gvRight" Grid.Row="2" Grid.Column="2"></ListView>
     </Grid>
 </Page>

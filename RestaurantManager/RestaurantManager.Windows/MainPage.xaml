@@ -17,8 +17,12 @@
         <TextBlock Text="Restaurant Manager" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="32"/>
         <TextBlock Text="Internal test version" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
         <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock Name="ov" Text="**Go to Orders View**" Grid.Row="1" Margin="50" FontSize="20" DoubleTapped="ov_DoubleTapped"  />
-            <TextBlock Name="so" Text="**Submit Order**" Grid.Row="1" Margin="50" FontSize="20" DoubleTapped="so_DoubleTapped" />
+            <Button x:Name="btnOrders" Content="Go to Orders View" Grid.Row="1" Margin="100" FontSize="20" Click="btnOrders_Click">
+                
+            </Button>
+            <Button x:Name="btnSubmit" Content="Submit Order" Grid.Row="1" Margin="100" FontSize="20" Click="btnSubmit_Click">
+
+            </Button>
         </StackPanel>
         
     </Grid>
